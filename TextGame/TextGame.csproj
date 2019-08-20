@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Artwork\Key.cs" />
+    <Compile Include="Commands.cs" />
     <Compile Include="Map\Border.cs" />
     <Compile Include="Map\Location.cs" />
     <Compile Include="Map\Movement.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Story\Beach.cs" />
+    <Compile Include="Story\Forest.cs" />
     <Compile Include="Story\Introduction.cs" />
   </ItemGroup>
   <ItemGroup>
