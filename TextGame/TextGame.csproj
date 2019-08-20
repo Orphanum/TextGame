@@ -55,6 +55,7 @@
     <Compile Include="Story\Beach.cs" />
     <Compile Include="Story\Forest.cs" />
     <Compile Include="Story\Introduction.cs" />
+    <Compile Include="Story\Story.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TextGame.Story
 {
-    class Beach
+    class Beach : Story
     {
-        public static void BeachStory()
+        public override void MainStory()
         {
             Console.WriteLine("You arrive at the beach. It's eerily quiet, and you can hear the waves going back and forth");
             Console.WriteLine("");

@@ -27,16 +27,13 @@ namespace TextGame
             Console.WriteLine("'Yes' or 'No'?");
             Console.WriteLine("\n");
 
-            
-
             var UserInput = Console.ReadLine().ToUpper();
 
-            
             if (UserInput == "YES")
             {
                 ConsoleClear();
-                Introduction.Intro();
-                
+                Introduction.StoryIntro();
+
                 while (true)
                 {
                     UserInput = Console.ReadLine();
@@ -45,9 +42,6 @@ namespace TextGame
                     if (UserInput == "Search") Commands.Search();
                     if (UserInput == "Location") Commands.LocationInformation();
                 }
-                Movement.Move();
-                
-                
             }
 
 

@@ -24,14 +24,14 @@ namespace TextGame.Map
             {
                 if (UserInput == Location.Beach.Name)
                 {
-                    Beach.BeachStory();
+                    //Beach.BeachStory();
                 }
                 if (UserInput == Location.Crypt.Name)
                 {
                     Program.Key = true;
                 }
             }
-            else Console.WriteLine("That is not a valid location");
+            else Console.WriteLine("That is not a valid location.");
 
 
             //}
