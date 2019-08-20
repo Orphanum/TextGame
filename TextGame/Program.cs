@@ -36,14 +36,20 @@ namespace TextGame
             {
                 ConsoleClear();
                 Introduction.Intro();
+                
+                while (true)
+                {
+                    UserInput = Console.ReadLine();
+
+                    if (UserInput == "Help") Commands.Help();
+                    if (UserInput == "Search") Commands.Search();
+                    if (UserInput == "Location") Commands.LocationInformation();
+                }
                 Movement.Move();
                 
                 
             }
-            while (true)
-            {
-                Movement.Move();
-            }
+
 
         }
         public static void ConsoleClear()

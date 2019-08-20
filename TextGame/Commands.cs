@@ -8,7 +8,7 @@ namespace TextGame
 {
     class Commands
     {
-        public static void Instructions()
+        public static void Help()
         {
             Program.ConsoleClear();
             Console.WriteLine("The available commands are:");
