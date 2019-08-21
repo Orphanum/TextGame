@@ -18,7 +18,8 @@ namespace TextGame
         {
             //Initializing
             GameIntroduction.ArtIntro();
-            Location.CreateBorders();
+            Location.CreateMap();
+            GameStory.CreateStory();
             CurrentLocation = Location.Crossroad;
             //Initialization done
 
@@ -32,8 +33,7 @@ namespace TextGame
             if (UserInput == "YES")
             {
                 ConsoleClear();
-                Introduction.StoryIntro();
-
+                Introduction.StoryIntroduction();
                 while (true)
                 {
                     UserInput = Console.ReadLine();

@@ -26,7 +26,7 @@ namespace TextGame
         }
         public static void Search()
         {
-
+            throw new NotImplementedException();
         }
 
     }

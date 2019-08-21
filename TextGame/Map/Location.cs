@@ -29,7 +29,7 @@ namespace TextGame.Map
         public static Location Forest;
         public static Location Crypt;
 
-        public static void CreateBorders()
+        public static void CreateMap()
         {
             for (var i = 0; i < 3; i++)
             {
