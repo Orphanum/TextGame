@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextGame.Story
 {
-    class Castle : GameStory
+    class Graveyard : GameStory
     {
         public override void MainStory()
         {

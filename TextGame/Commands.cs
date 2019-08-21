@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TextGame.Map;
 
 namespace TextGame
 {
@@ -15,12 +16,13 @@ namespace TextGame
             Console.WriteLine("Help: Brings up this screen.");
             Console.WriteLine("Search: Search for stuff at the current location");
             Console.WriteLine("Move <location>: Moves to the location specified.");
-            Console.WriteLine("Current: Shows your current location and related information.");
+            Console.WriteLine("Location: Shows your current location and related information.");
         }
 
         public static void LocationInformation()
         {
-            Console.WriteLine("Current location: " + Program.CurrentLocation);
+            Program.ConsoleClear();
+            Console.WriteLine("Current location: " + Program.CurrentLocation.Name);
             Console.WriteLine("You may move to:");
             Program.CurrentLocation.ShowBorders();
         }
@@ -28,6 +30,23 @@ namespace TextGame
         {
             throw new NotImplementedException();
         }
+        public static void Move()
+        {
+            Program.ConsoleClear();
+            Console.WriteLine("\nYou're currently at: " + Program.CurrentLocation.Name);
+            Console.WriteLine("You may move to:");
+            Program.CurrentLocation.ShowBorders();
+            Console.WriteLine("\nWhere would you like to move?");
 
+            var UserInput = Console.ReadLine();
+
+            Location location = Program.CurrentLocation.Borders.FirstOrDefault(l => l.Name == UserInput);
+
+            if (UserInput == location.Name)
+            {          
+
+            }
+            else Console.WriteLine("That is not a valid location.");
+        }
     }
 }

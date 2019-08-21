@@ -7,6 +7,7 @@ using TextGame.Artwork;
 using TextGame.Story;
 using TextGame.Map;
 
+
 namespace TextGame
 {
 
@@ -36,11 +37,12 @@ namespace TextGame
                 Introduction.StoryIntroduction();
                 while (true)
                 {
-                    UserInput = Console.ReadLine();
+                    UserInput = Console.ReadLine().ToUpper();
 
-                    if (UserInput == "Help") Commands.Help();
-                    if (UserInput == "Search") Commands.Search();
-                    if (UserInput == "Location") Commands.LocationInformation();
+                    if (UserInput == "HELP") Commands.Help();
+                    if (UserInput == "SEARCH") Commands.Search();
+                    if (UserInput == "LOCATION") Commands.LocationInformation();
+                    if (UserInput == "MOVE") Commands.Move();
                 }
             }
 
