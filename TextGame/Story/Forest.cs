@@ -28,6 +28,11 @@ namespace TextGame.Story
             Console.WriteLine("After walking around for what seems to be forever, you come across a stone wall.");
             Console.WriteLine("Following it, you find a tall metal gate.");
             Console.WriteLine("The gate is locked however, and you see no way around it.");
+            if (Program.HasKey == true)
+            {
+                Console.WriteLine("With the key you found in the crypt, you open the gate.");
+                Console.WriteLine("ADD MORE");
+            }
         }
     }
 }
