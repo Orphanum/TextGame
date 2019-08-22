@@ -8,9 +8,14 @@ namespace TextGame.Story
 {
     class Crypt : GameStory
     {
+        public Crypt()
+            : base("Crypt")
+        {
+
+        }
         public override void MainStory()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("placeholder crypt");
         }
         public override void SearchLocation()
         {

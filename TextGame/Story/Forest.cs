@@ -8,6 +8,11 @@ namespace TextGame.Story
 {
     class Forest : GameStory
     {
+        public Forest()
+            : base("Forest")
+        {
+
+        }
         public override void MainStory()
         {
             Console.WriteLine("The forest is dark and gloomy. Shadows seem to loom everywhere.");

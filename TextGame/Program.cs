@@ -15,6 +15,7 @@ namespace TextGame
     {
         public static bool Key = false;
         public static Location CurrentLocation;
+        public static List<GameStory> list = new List<GameStory>();
         static void Main(string[] args)
         {
             //Initializing

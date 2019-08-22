@@ -42,11 +42,11 @@ namespace TextGame
             var UserInput = Console.ReadLine();
 
             Location location = Program.CurrentLocation.Borders.FirstOrDefault(l => l.Name == UserInput);
-
+            
             if (location != null && UserInput == location.Name)
             {
                 Program.CurrentLocation = location;
-                
+                foreach (var l in Program.list) if (UserInput == l.Name) l.MainStory();
             }
             else if (location == null) Console.WriteLine("That is not a valid location.");
         }

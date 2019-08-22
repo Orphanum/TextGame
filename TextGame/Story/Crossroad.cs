@@ -8,6 +8,11 @@ namespace TextGame.Story
 {
     class Crossroad : GameStory
     {
+        public Crossroad()
+            : base("Crossroad")
+        {
+
+        }
         public override void MainStory()
         {
             Console.WriteLine("There's several paths forking out around you.");

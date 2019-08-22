@@ -46,7 +46,6 @@
     <Compile Include="Artwork\Key.cs" />
     <Compile Include="Commands.cs" />
     <Compile Include="Map\Location.cs" />
-    <Compile Include="Map\Movement.cs" />
     <Compile Include="Artwork\GameIntroduction.cs" />
     <Compile Include="Artwork\Gate.cs" />
     <Compile Include="Program.cs" />

@@ -8,9 +8,14 @@ namespace TextGame.Story
 {
     class Village : GameStory
     {
+        public Village()
+            : base("Village")
+        {
+
+        }
         public override void MainStory()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Placeholder village");
         }
         public override void SearchLocation()
         {

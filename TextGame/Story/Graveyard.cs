@@ -8,9 +8,14 @@ namespace TextGame.Story
 {
     class Graveyard : GameStory
     {
+        public Graveyard()
+            : base("Graveyard")
+        {
+
+        }
         public override void MainStory()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("placeholder graveyard");
         }
         public override void SearchLocation()
         {
