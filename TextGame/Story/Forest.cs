@@ -13,5 +13,9 @@ namespace TextGame.Story
             Console.WriteLine("The forest is dark and gloomy. Shadows seem to loom everywhere.");
             Console.WriteLine("");
         }
+        public override void SearchLocation()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

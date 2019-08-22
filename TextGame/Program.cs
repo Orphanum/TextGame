@@ -52,5 +52,10 @@ namespace TextGame
         {
             Console.Clear();
         }
+
+        public static void StartUp()
+        {
+
+        }
     }
 }

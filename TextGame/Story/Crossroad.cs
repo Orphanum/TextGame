@@ -14,5 +14,9 @@ namespace TextGame.Story
             Console.WriteLine("A quick look around you reveals a forest. A bit further in the distance you can see a village, with a nearby beach.");
             Console.WriteLine("The last path leads to a graveyard behind the village.");
         }
+        public override void SearchLocation()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

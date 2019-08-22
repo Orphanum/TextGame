@@ -12,5 +12,9 @@ namespace TextGame.Story
         {
             throw new NotImplementedException();
         }
+        public override void SearchLocation()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

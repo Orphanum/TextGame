@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TextGame.Map;
+using TextGame.Story;
 
 namespace TextGame
 {
@@ -42,11 +43,12 @@ namespace TextGame
 
             Location location = Program.CurrentLocation.Borders.FirstOrDefault(l => l.Name == UserInput);
 
-            if (UserInput == location.Name)
-            {          
-
+            if (location != null && UserInput == location.Name)
+            {
+                Program.CurrentLocation = location;
+                
             }
-            else Console.WriteLine("That is not a valid location.");
+            else if (location == null) Console.WriteLine("That is not a valid location.");
         }
     }
 }

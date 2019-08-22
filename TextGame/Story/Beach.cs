@@ -13,5 +13,9 @@ namespace TextGame.Story
             Console.WriteLine("You arrive at the beach. It's eerily quiet, and you can hear the waves going back and forth");
             Console.WriteLine("");
         }
+        public override void SearchLocation()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

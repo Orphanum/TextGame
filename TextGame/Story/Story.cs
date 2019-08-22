@@ -9,7 +9,7 @@ namespace TextGame.Story
     public abstract class GameStory
     {
         public abstract void MainStory();
-
+        public abstract void SearchLocation();
         public static void CreateStory()
         {
             var Forest = new Forest();
