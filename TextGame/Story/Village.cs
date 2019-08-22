@@ -19,7 +19,8 @@ namespace TextGame.Story
         }
         public override void SearchLocation()
         {
-            throw new NotImplementedException();
+            Program.HasShovel = true;
+
         }
     }
 }

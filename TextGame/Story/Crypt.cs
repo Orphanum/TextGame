@@ -19,7 +19,7 @@ namespace TextGame.Story
         }
         public override void SearchLocation()
         {
-            throw new NotImplementedException();
+            Program.HasKey = true;
         }
     }
 }

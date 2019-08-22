@@ -13,7 +13,8 @@ namespace TextGame
 
     class Program
     {
-        public static bool Key = false;
+        public static bool HasKey = false;
+        public static bool HasShovel = false;
         public static Location CurrentLocation;
         public static List<GameStory> list = new List<GameStory>();
         static void Main(string[] args)
