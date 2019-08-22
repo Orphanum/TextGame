@@ -11,16 +11,17 @@ namespace TextGame.Story
         public Beach()
             : base("Beach")
         {
-
         }
         public override void MainStory()
         {
             Console.WriteLine("You arrive at the beach. It's eerily quiet, and you can hear the waves going back and forth");
-            Console.WriteLine("");
+            Console.WriteLine("It's beautiful here, but the completely blackened sky makes the entire area feel more spooky, than serene");
         }
         public override void SearchLocation()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("You take a look around, but there's not a whole lot here.");
+            Console.WriteLine("The sand looks like sand and feels like sand. There's some rocks here and there.");
+            Console.WriteLine("There appears to be no wildlife here however, not even any bugs.");
         }
     }
 }

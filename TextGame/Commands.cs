@@ -29,7 +29,10 @@ namespace TextGame
         }
         public static void Search()
         {
-            throw new NotImplementedException();
+            foreach (var l in Program.list)
+            {
+                if (Program.CurrentLocation.Name == l.Name) l.SearchLocation();
+            }
         }
         public static void Move()
         {
@@ -38,8 +41,9 @@ namespace TextGame
             Console.WriteLine("You may move to:");
             Program.CurrentLocation.ShowBorders();
             Console.WriteLine("\nWhere would you like to move?");
-
+            
             var UserInput = Console.ReadLine();
+            Program.ConsoleClear();
 
             Location location = Program.CurrentLocation.Borders.FirstOrDefault(l => l.Name == UserInput);
             

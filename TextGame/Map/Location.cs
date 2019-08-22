@@ -11,15 +11,17 @@ namespace TextGame.Map
         public string Name;
         public List<Location> Borders = new List<Location>();
 
-        public Location(
-            string _name,
-            params Location[] borders)
+        public Location(string _name)
+        {
+            Name = _name;
+        }
+
+        public void AddBorders(params Location[] borders)
         {
             foreach (Location border in borders)
             {
                 Borders.Add(border);
             }
-            Name = _name;
         }
 
         public static Location Crossroad;
@@ -28,18 +30,27 @@ namespace TextGame.Map
         public static Location Beach;
         public static Location Forest;
         public static Location Crypt;
+        public static Location Graveyard;
 
         public static void CreateMap()
         {
-            for (var i = 0; i < 3; i++)
-            {
-                Crossroad = new Location("Crossroad", Forest, Village, Beach, Crypt);
-                Forest = new Location("Forest", Castle, Crossroad);
-                Castle = new Location("Castle", Forest);
-                Village = new Location("Village", Beach, Crossroad, Crypt);
-                Crypt = new Location("Crypt", Crossroad, Village);
-                Beach = new Location("Beach", Village, Crossroad);
-            }
+            Crossroad = new Location("Crossroad");
+            Forest = new Location("Forest");
+            Castle = new Location("Castle");
+            Village = new Location("Village");
+            Crypt = new Location("Crypt");
+            Beach = new Location("Beach");
+            Graveyard = new Location("Graveyard");
+               
+
+            Crossroad.AddBorders(Forest, Village, Beach, Graveyard);
+            Forest.AddBorders(Castle, Crossroad);
+            Castle.AddBorders(Forest);
+            Village.AddBorders(Beach, Crossroad, Graveyard);
+            Crypt.AddBorders(Graveyard);
+            Beach.AddBorders(Village, Crossroad);
+            Graveyard.AddBorders(Crypt, Village, Crossroad);
+
         }
         public void ShowBorders()
         {
