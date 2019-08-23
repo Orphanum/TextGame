@@ -37,6 +37,7 @@ namespace TextGame
             {
                 ConsoleClear();
                 Introduction.StoryIntroduction();
+                
                 while (true)
                 {
                     UserInput = Console.ReadLine().ToUpper();
